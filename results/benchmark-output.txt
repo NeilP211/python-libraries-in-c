@@ -1,0 +1,49 @@
+Python 3.12.2, NumPy 2.2.6, arm64 Darwin
+
+n = 1,000   (all methods agree: 332,833,500)
+  python loop       33.3 us       1.0x vs python loop
+  python sum()      38.5 us       0.9x vs python loop
+  C over list        2.9 us      11.4x vs python loop
+  C via ctypes       4.4 us       7.6x vs python loop
+  C extension        0.6 us      59.6x vs python loop
+  numpy              2.1 us      15.9x vs python loop
+  (list->numpy)     20.2 us   one-time conversion cost
+
+n = 10,000   (all methods agree: 3,328,335,000)
+  python loop      424.6 us       1.0x vs python loop
+  python sum()     273.7 us       1.6x vs python loop
+  C over list       20.9 us      20.3x vs python loop
+  C via ctypes       6.0 us      70.3x vs python loop
+  C extension        3.2 us     134.0x vs python loop
+  numpy              7.5 us      56.8x vs python loop
+  (list->numpy)    270.4 us   one-time conversion cost
+
+n = 100,000   (all methods agree: 33,283,350,000)
+  python loop       4.35 ms       1.0x vs python loop
+  python sum()      4.64 ms       0.9x vs python loop
+  C over list      335.1 us      13.0x vs python loop
+  C via ctypes      50.4 us      86.4x vs python loop
+  C extension       44.8 us      97.0x vs python loop
+  numpy             78.2 us      55.6x vs python loop
+  (list->numpy)     2.60 ms   one-time conversion cost
+
+n = 1,000,000   (all methods agree: 332,833,500,000)
+  python loop      53.27 ms       1.0x vs python loop
+  python sum()     52.98 ms       1.0x vs python loop
+  C over list       4.09 ms      13.0x vs python loop
+  C via ctypes     556.8 us      95.7x vs python loop
+  C extension      486.5 us     109.5x vs python loop
+  numpy             1.23 ms      43.1x vs python loop
+  (list->numpy)    35.69 ms   one-time conversion cost
+
+n = 10,000,000   (all methods agree: 3,328,335,000,000)
+  python loop     555.79 ms       1.0x vs python loop
+  python sum()    473.38 ms       1.2x vs python loop
+  C over list      21.03 ms      26.4x vs python loop
+  C via ctypes      3.12 ms     178.4x vs python loop
+  C extension       3.12 ms     177.9x vs python loop
+  numpy            10.70 ms      51.9x vs python loop
+  (list->numpy)   515.69 ms   one-time conversion cost
+
+Wrote /Users/neilpatel/projects/python-libraries-in-c/results/benchmark-darwin-arm64.csv
+Wrote /Users/neilpatel/projects/python-libraries-in-c/results/benchmark-darwin-arm64.png
