@@ -1,4 +1,3 @@
 # Slides
 
-The slides from the in-person and recorded presentation go in this folder
-(PDF export, so they open right on GitHub).
+[python-libraries-in-c-slides.pdf](python-libraries-in-c-slides.pdf): the slides from the in-person and recorded presentation.
