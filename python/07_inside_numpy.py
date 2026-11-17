@@ -1,8 +1,9 @@
 """Experiment 7: what is NumPy actually made of?
 
-NumPy's fast parts are compiled C, shipped as shared library files that
-end in .so (Linux and macOS) or .pyd (Windows). These are the same kind of
-file as build/fastmath*.so in this repo, just much bigger.
+NumPy's fast parts are compiled code (mostly C, plus some C++), shipped as
+shared library files that end in .so (Linux and macOS) or .pyd (Windows).
+These are the same kind of file as build/fastmath*.so in this repo, just
+much bigger.
 """
 import inspect
 from pathlib import Path

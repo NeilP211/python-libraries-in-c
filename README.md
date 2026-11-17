@@ -2,7 +2,7 @@
 
 COMP 211 Checkoff 3 (Fall 2026): an exploration of how Python libraries like NumPy get C speed, and what that costs.
 
-Python is known as a slow language, yet most data science and machine learning code is written in it. The trick is that the heavy lifting does not happen in Python at all. Libraries such as NumPy are thin Python layers over compiled C. This repo calls C from Python two different ways, then measures where the speed actually comes from.
+Python is known as a slow language, yet most data science and machine learning code is written in it. The trick is that the heavy lifting does not happen in Python at all. Libraries such as NumPy are thin Python layers over compiled code, mostly C. This repo calls C from Python two different ways, then measures where the speed actually comes from.
 
 ## What's in here
 

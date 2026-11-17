@@ -29,7 +29,7 @@ print(f"  np.int64({INT64_MAX}) + 1 = {result}")
 for w in caught:
     print(f"  warning: {w.message}")
 
-print("\nA realistic way to hit it: summing a big int8 image")
+print("\nA realistic way to hit it: adding two int8 images")
 pixels = np.full(1000, 100, dtype=np.int8)  # 1000 pixels, each value 100
 print(f"  pixels.dtype = {pixels.dtype}, pixels[:3] = {pixels[:3]}")
 print(f"  (pixels + pixels)[:3] = {(pixels + pixels)[:3]}   (100 + 100 does not fit in int8)")
